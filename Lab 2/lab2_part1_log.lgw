@@ -1,0 +1,75 @@
+/BATCH  
+! /COM,ANSYS RELEASE 2024 R2           BUILD 24.2      UP20240603       10:37:18  
+/input,menust,tmp,''
+! /GRA,POWER  
+! /GST,ON 
+! /PLO,INFO,3 
+! /GRO,CURL,ON
+! /CPLANE,1   
+! /REPLOT,RESIZE  
+WPSTYLE,,,,,,,,0
+/PREP7  
+!*  
+ET,1,BEAM188
+!*  
+!*  
+MPTEMP,,,,,,,,  
+MPTEMP,1,0  
+MPDATA,EX,1,,70e9   
+MPDATA,PRXY,1,,0.3  
+SECTYPE,   1, BEAM, I, , 0  
+SECOFFSET, CENT 
+SECDATA,0.05,0.05,0.09,0.002,0.002,0.001,0,0,0,0,0,0
+SECTYPE,   1, BEAM, I, , 0  
+SECOFFSET, CENT 
+SECDATA,0.05,0.05,0.09,0.002,0.002,0.001,0,0,0,0,0,0
+N,1,0,0,0,,,,   
+N,11,2.5,0,0,,,,
+N,11,2.5,0,0,,,,
+!*  
+FILL,1,11,9, , ,1,1,1,  
+!*  
+FLST,2,2,1  
+FITEM,2,1   
+FITEM,2,2   
+E,P51X  
+FLST,4,1,2,ORDE,1   
+FITEM,4,1   
+EGEN,10,1,P51X, , , , , , , , , , , 
+!*  
+! /SHRINK,0   
+! /ESHAPE,1   
+! /EFACET,1   
+! /RATIO,1,1,1
+/CFORMAT,32,0   
+! /REPLOT 
+!*  
+! EPLOT   
+! /VIEW,1,,1  
+! /ANG,1  
+! /REP,FAST   
+FLST,2,1,1,ORDE,1   
+FITEM,2,1   
+!*  
+/GO 
+D,P51X,ALL, , , , , , , , , ,   
+FLST,2,10,2,ORDE,2  
+FITEM,2,1   
+FITEM,2,-10 
+SFBEAM,P51X,1,PRES,250,250, , , , ,0
+FINISH  
+/SOL
+! /STATUS,SOLU
+SOLVE   
+FINISH  
+/POST1  
+SET,LAST
+SET,LAST
+! PLDISP,1
+!*  
+! /EFACET,1   
+! PLNSOL, U,SUM, 0,1.0
+! SAVE, lab2,db,U:\Desktop\ 
+! /COM,ANSYS RELEASE 2024 R2           BUILD 24.2      UP20240603       16:12:30  
+! /REPLOT,RESIZE  
+! LGWRITE,'lab2_part1_log','','U:\Desktop\',COMMENT 

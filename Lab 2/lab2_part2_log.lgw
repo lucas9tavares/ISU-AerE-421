@@ -1,0 +1,822 @@
+/BATCH  
+! /COM,ANSYS RELEASE 2024 R2           BUILD 24.2      UP20240603       11:45:21  
+/input,start,ans,'C:\Program Files\ANSYS Inc\v242\ANSYS\apdl\'  
+!*  
+/PREP7  
+!*  
+ET,1,BEAM188
+!*  
+ET,2,LINK180
+!*  
+!*  
+MPTEMP,,,,,,,,  
+MPTEMP,1,0  
+MPDATA,EX,1,,207e9  
+MPDATA,PRXY,1,,0.3  
+SECTYPE,   1, BEAM, CTUBE, , 0  
+SECOFFSET, CENT 
+SECDATA,0.045,0.05,0,0,0,0,0,0,0,0,0,0  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+!*  
+!*  
+SECTYPE,2,LINK, ,ACAD   
+SECDATA,4.91e-4,
+SECCONTROL,0,0  
+!*  
+N,1,0,0,0,,,,   
+N,11,0,1.35,0,,,,   
+!*  
+FILL,1,11,9, , ,1,1,1,  
+!*  
+N,31,-0.3,1.35,-0.66,,,,
+N,41,0.3,1.35,-0.66,,,, 
+N,41,0.3,1.35,-0.66,,,, 
+TYPE,   1   
+MAT,       1
+REAL,   
+ESYS,       0   
+SECNUM,   1 
+TSHAP,LINE  
+!*  
+FLST,2,2,1  
+FITEM,2,1   
+FITEM,2,2   
+E,P51X  
+FLST,4,1,2,ORDE,1   
+FITEM,4,1   
+EGEN,10,1,P51X, , , , , , , , , , , 
+N,51,0,0.75,0,,,,   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+FLST,2,10,2,ORDE,2  
+FITEM,2,1   
+FITEM,2,-10 
+EDELE,P51X  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,2,12,1,ORDE,3  
+FITEM,2,1   
+FITEM,2,-11 
+FITEM,2,51  
+NDELE,P51X  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+N,1,0,0,0,,,,   
+N,2,0,0.75,0,,,,
+N,3,0,1.35,0,,,,
+FLST,2,2,1,ORDE,2   
+FITEM,2,2   
+FITEM,2,-3  
+NDELE,P51X  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+N,21,0,1.35,0,,,,   
+N,11,0,0.75,0,,,,   
+!*  
+FILL,1,11,9, , ,1,1,1,  
+!*  
+!*  
+FILL,11,21,9, , ,1,1,1, 
+!*  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,2,4,1  
+FITEM,2,1   
+FITEM,2,3   
+FITEM,2,3   
+FITEM,2,2   
+E,P51X  
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+TYPE,   1   
+MAT,       1
+REAL,   
+ESYS,       0   
+SECNUM,   1 
+TSHAP,LINE  
+!*  
+FLST,4,1,2,ORDE,1   
+FITEM,4,11  
+EGEN,20,1,P51X, , , , , , , , , , , 
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+FLST,4,1,2,ORDE,1   
+FITEM,4,11  
+EGEN,10,1,P51X, , , , , , , , , , , 
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+FLST,2,2,1  
+FITEM,2,11  
+FITEM,2,12  
+E,P51X  
+FLST,4,1,2,ORDE,1   
+FITEM,4,21  
+EGEN,10,1,P51X, , , , , , , , , , , 
+TYPE,   2   
+MAT,       1
+REAL,   
+ESYS,       0   
+SECNUM,   2 
+TSHAP,LINE  
+!*  
+FLST,2,2,1  
+FITEM,2,11  
+FITEM,2,31  
+E,P51X  
+FLST,2,2,1  
+FITEM,2,11  
+FITEM,2,41  
+E,P51X  
+!*  
+! /SHRINK,0   
+! /ESHAPE,1   
+! /EFACET,1   
+! /RATIO,1,1,1
+/CFORMAT,32,0   
+! /REPLOT 
+!*  
+! EPLOT   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /VIEW,1,1   
+! /ANG,1  
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /VIEW,1,1   
+! /ANG,1  
+! /REP,FAST   
+! /VIEW,1,,,1 
+! /ANG,1  
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+TYPE,   1   
+MAT,       1
+REAL,   
+ESYS,       0   
+SECNUM,   1 
+TSHAP,LINE  
+!*  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,2,2,1  
+FITEM,2,1   
+FITEM,2,2   
+E,P51X  
+FLST,4,1,2,ORDE,1   
+FITEM,4,33  
+EGEN,10,1,P51X, , , , , , , , , , , 
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,2,1,1,ORDE,1   
+FITEM,2,21  
+!*  
+/GO 
+D,P51X,ALL, , , , , , , , , ,   
+FLST,2,2,1,ORDE,2   
+FITEM,2,31  
+FITEM,2,41  
+!*  
+/GO 
+D,P51X,UX, , , , ,UY,UZ, , , ,  
+FLST,2,1,1,ORDE,1   
+FITEM,2,1   
+!*  
+/GO 
+F,P51X,FY,178000
+FLST,2,1,1,ORDE,1   
+FITEM,2,1   
+!*  
+/GO 
+F,P51X,FZ,-70000
+! /VIEW,1,,,1 
+! /ANG,1  
+! /REP,FAST   
+! /VIEW,1,1   
+! /ANG,1  
+! /REP,FAST   
+FINISH  
+/SOL
+! /STATUS,SOLU
+SOLVE   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FINISH  
+/PREP7  
+FLST,2,32,2,ORDE,2  
+FITEM,2,11  
+FITEM,2,-42 
+EDELE,P51X  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,2,2,1  
+FITEM,2,1   
+FITEM,2,2   
+E,P51X  
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,4,1,2,ORDE,1   
+FITEM,4,43  
+EGEN,10,1,P51X, , , , , , , , , , , 
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FLST,2,2,1  
+FITEM,2,11  
+FITEM,2,12  
+E,P51X  
+FLST,4,1,2,ORDE,1   
+FITEM,4,53  
+EGEN,10,1,P51X, , , , , , , , , , , 
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+TYPE,   2   
+MAT,       1
+REAL,   
+ESYS,       0   
+SECNUM,   2 
+TSHAP,LINE  
+!*  
+! /VIEW,1,1   
+! /ANG,1  
+! /REP,FAST   
+! /VIEW,1,,1  
+! /ANG,1  
+! /REP,FAST   
+! /VIEW,1,1   
+! /ANG,1  
+! /REP,FAST   
+! /VIEW,1,,,1 
+! /ANG,1  
+! /REP,FAST   
+FLST,2,2,1  
+FITEM,2,41  
+FITEM,2,11  
+E,P51X  
+FLST,2,2,1  
+FITEM,2,11  
+FITEM,2,31  
+E,P51X  
+! EPLOT   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+FINISH  
+/SOL
+! /STATUS,SOLU
+SOLVE   
+! /VIEW,1,1   
+! /ANG,1  
+! /REP,FAST   
+FINISH  
+/POST1  
+! PLDISP,1
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! /DIST, 1 ,1.082226,1
+! /REP,FAST   
+! /DIST, 1 ,0.924021,1
+! /REP,FAST   
+! SAVE, lab2correct,db,U:\Desktop\AerE421Lab\   
+! /COM,ANSYS RELEASE 2024 R2           BUILD 24.2      UP20240603       16:13:49  
+! LGWRITE,'lab2_part2_log','lgw','U:\Desktop\',COMMENT  
