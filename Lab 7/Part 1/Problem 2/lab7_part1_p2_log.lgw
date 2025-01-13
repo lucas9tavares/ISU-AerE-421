@@ -1,0 +1,57 @@
+/BATCH  
+/input,start,ans,'C:\Program Files\ANSYS Inc\v242\ANSYS\apdl\'  
+/PREP7  
+MP,EX,1,190e9   
+MP,PRXY,1,0.3   
+MP,DENS,1,7700  
+ET,1,PLANE182   
+K,1,0,0,0,  
+K,2,0,0.005,0,  
+K,3,0.1,0.005,0,
+K,4,0.1,0,0,
+K,5,0,0.055,0,  
+K,6,0,0.06,0,   
+K,7,0.1,0.06,0, 
+K,8,0.1,0.055,0,
+K,9,0.125,0.03,0,   
+K,10,0.13,0.0275,0, 
+K,11,0.13,0.0325,0, 
+K,12,0.165,0.0275,0,
+K,13,0.165,0.0325,0,
+K,14,0.1,0.03,0,
+L,       1,       2 
+L,       1,       2 
+L,       1,       4 
+L,       2,       3 
+L,       5,       6 
+L,       6,       7 
+L,       5,       8 
+LSTR,      10,      12  
+LSTR,      12,      13  
+LSTR,      13,      11  
+LARC, 8, 9, 14, 0.025   
+LARC, 3, 9, 14, 0.025   
+LARC, 7, 11, 14, 0.03   
+LARC, 4, 10, 14, 0.03   
+AL, ALL 
+CM,_Y,AREA  
+ASEL, , , ,       1 
+CM,_Y1,AREA 
+CMSEL,S,_Y  
+CMSEL,S,_Y1 
+AATT,       1, ,   1,       0,  
+CMSEL,S,_Y  
+CMDELE,_Y   
+CMDELE,_Y1  
+SMRTSIZE,1
+AMESH, ALL
+FINISH  
+/SOL
+ANTYPE,2
+MODOPT,LANB,10  
+EQSLV,SPAR  
+MXPAND,10, , ,1 
+LUMPM,0 
+PSTRES,0
+MODOPT,LANB,10,12,28000, ,OFF   
+SOLVE   

@@ -1,0 +1,98 @@
+/PREP7  
+
+MP,EX,1,70e9
+MP,PRXY,1,0.29  
+MP,DENS,1,2700  
+ET,1,SHELL181   
+sect,1,shell,,  
+secdata, 0.001,1,0.0,3  
+secoffset,MID   
+seccontrol,,,, , , ,
+MP,EX,2,71.4e9  
+MP,PRXY,2,0.31  
+MP,DENS,2,2860  
+ET,2,LINK180
+SECTYPE,2,LINK, ,   
+SECDATA,3.5e-5, 
+SECCONTROL,0,0  
+
+K,1,0,0,0,  
+K,2,0.5,0,0,
+K,3,0.5,0.025,0,
+K,4,0,0.025,0,  
+K,5,0,0,-0.05,  
+K,6,0.5,0,-0.05,
+K,7,0.5,0.025,-0.05,
+K,8,0,0.025,-0.05,  
+L,1,2   
+L,2,3   
+L,3,4   
+L,4,1   
+L,5,6   
+L,6,7   
+L,7,8   
+L,8,5   
+L,1,5   
+L,2,6   
+L,3,7   
+L,4,8   
+AL,1,2,3,4  
+AL,5,6,7,8  
+AL,3,11,7,12
+AL,1,10,5,9 
+
+FLST,5,4,5,ORDE,2   
+FITEM,5,1   
+FITEM,5,-4  
+CM,_Y,AREA  
+ASEL, , , ,P51X 
+CM,_Y1,AREA 
+CMSEL,S,_Y  
+CMSEL,S,_Y1 
+AATT,       1, ,   1,       0,  
+CMSEL,S,_Y  
+CMDELE,_Y   
+CMDELE,_Y1  
+FLST,5,8,4,ORDE,6   
+FITEM,5,1   
+FITEM,5,-3  
+FITEM,5,5   
+FITEM,5,-7  
+FITEM,5,10  
+FITEM,5,-11 
+CM,_Y,LINE  
+LSEL, , , ,P51X 
+CM,_Y1,LINE 
+CMSEL,S,_Y  
+CMSEL,S,_Y1 
+LATT,2, ,2, , , ,   
+CMSEL,S,_Y  
+CMDELE,_Y   
+CMDELE,_Y1  
+SMRTSIZE,1  
+AMESH, ALL  
+LESIZE,ALL, , ,20, ,1, , ,1,
+FLST,2,4,4,ORDE,4   
+FITEM,2,4   
+FITEM,2,8   
+FITEM,2,-9  
+FITEM,2,12  
+/GO 
+DL,P51X, ,ALL,  
+
+FINISH  
+/SOL
+FINISH  
+/SOL
+ANTYPE,2
+MODOPT,LANB,5   
+EQSLV,SPAR  
+MXPAND,5, , ,1  
+LUMPM,0 
+PSTRES,0
+MODOPT,LANB,5,20,1000000, ,OFF   
+SOLVE   
+FINISH  
+/POST1  
+FINISH  
+/SOL

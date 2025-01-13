@@ -1,0 +1,154 @@
+/clear
+
+/PREP7  
+ET,1,SHELL281   
+
+MPTEMP,,,,,,,,  
+MPTEMP,1,0  
+MPDATA,EX,1,,154E9  
+MPDATA,EY,1,,14.79E9
+MPDATA,EZ,1,,14.79E9
+MPDATA,PRXY,1,,0.175
+MPDATA,PRYZ,1,,0.3  
+MPDATA,PRXZ,1,,0.175
+MPDATA,GXY,1,,7.48  
+MPDATA,GYZ,1,,3.37  
+MPDATA,GXZ,1,,7.48  
+FC,1,S,XTEN,1500E6  
+FC,1,S,YTEN,40E6
+FC,1,S,ZTEN,40E6
+FC,1,S,XCMP,-1500E6 
+FC,1,S,YCMP,-246E6  
+FC,1,S,ZCMP,-246E6  
+FC,1,S,XY,68E6  
+FC,1,S,YZ,68E6  
+FC,1,S,XZ,68E6  
+FC,1,S,XYCP,
+FC,1,S,YZCP,
+FC,1,S,XZCP,
+FC,1,EPEL,XTEN, 
+FC,1,EPEL,YTEN, 
+FC,1,EPEL,ZTEN, 
+FC,1,EPEL,XCMP, 
+FC,1,EPEL,YCMP, 
+FC,1,EPEL,ZCMP, 
+FC,1,EPEL,XY,   
+FC,1,EPEL,YZ,   
+FC,1,EPEL,XZ,   
+sect,1,shell,,  
+secdata, 125E-6,1,0.0,3 
+secdata, 125E-6,1,0.0,3 
+secdata, 125E-6,1,0.0,3 
+secdata, 125E-6,1,0.0,3 
+secdata, 125E-6,1,45,3  
+secdata, 125E-6,1,45,3  
+secdata, 125E-6,1,45,3  
+secdata, 125E-6,1,45,3  
+secoffset,MID   
+seccontrol,,,, , , ,
+
+
+KEYOPT,1,1,0
+KEYOPT,1,5,0
+KEYOPT,1,8,1
+KEYOPT,1,9,0
+KEYOPT,1,10,0   
+KEYOPT,1,11,0   
+
+k,1,-0.125,-0.05,0
+k,2,-0.125,0.05,0
+k,3,0.125,0.05,0
+k,4,0.125,-0.05,0
+
+k,5,0.02,0
+k,6,0,0.02,0
+k,7,-0.02,0
+k,8,0,-0.02,0
+k,9,0,0
+
+L,1,2
+L,2,3
+L,3,4
+L,4,1
+
+LARC,5,6,9,0.02
+LARC,6,7,9,0.02
+LARC,7,8,9,0.02
+LARC,8,5,9,0.02
+FLST,2,4,4,ORDE,2   
+FITEM,2,5   
+FITEM,2,-8  
+LSSCALE,P51X, , ,0.5,1,1, ,1,1  
+AL,ALL
+
+DK,1,UX
+DK,1,UY
+DK,1,UZ
+DK,2,UX
+DK,2,UZ
+DK,3,UZ
+
+SFL, 3, PRES, -10000
+SFL, 1, PRES, -10000
+
+AMESH,ALL
+
+ACLEAR,       1 
+CSWPLA,11,0,1,1,
+FLST,2,1,5,ORDE,1   
+FITEM,2,1   
+CM,_Y,AREA  
+ASEL, , , ,       1 
+CM,_Y1,AREA 
+CMSEL,S,_Y  
+!*  
+CMSEL,S,_Y1 
+AATT,       1, ,   1,      11,   1  
+CMSEL,S,_Y  
+CMDELE,_Y   
+CMDELE,_Y1  
+!*  
+SMRT,6  
+SMRT,5  
+SMRT,4  
+SMRT,3  
+/UI,MESH,OFF
+MSHAPE,0,2D 
+MSHKEY,0
+!*  
+CM,_Y,AREA  
+ASEL, , , ,       1 
+CM,_Y1,AREA 
+CHKMSH,'AREA'   
+CMSEL,S,_Y  
+!*  
+AMESH,_Y1   
+!*  
+CMDELE,_Y   
+CMDELE,_Y1  
+CMDELE,_Y2  
+!*  
+! /VIEW,1,1,1,1   
+! /ANG,1  
+! /REP,FAST   
+! /VIEW,1,,,1 
+! /ANG,1  
+! /REP,FAST   
+FINISH  
+
+/SOL
+antype, 0   
+SOLVE   
+FINISH  
+/POST1
+PLESOL,S,EQV,0,1.0
+
+/PREP7
+LREFINE,ALL,,,,2
+
+/SOL
+antype, 0   
+SOLVE   
+FINISH  
+/POST1
+PLESOL,S,EQV,0,1.0
